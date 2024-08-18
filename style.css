@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.current-tab {
+    background-color: #DBE2ED80;
+    height: 25px;
+    width: 130px;
+    text-align: center;
+    border-radius: 0.3rem;
+    
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(160deg, #112d4e 0% , #3f72af 100%);
+    background-repeat:no-repeat;
+}
+
+.topSection {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+
+    
+}
+.topSection h1 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    max-width: 550px;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.tabs p {
+    cursor: pointer;
+}
+
+.accessLocation {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 3rem;
+    visibility: hidden;
+}
+
+.accessLocation h1 {
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.accessLocation p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.accessLocation button {
+    width: 150px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 4px;
+    background-color: #3f72af;
+    cursor: pointer;
+}
+
+.your-info {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 650px;
+    margin-top: -300px;
+    visibility: hidden;
+
+}
+
+.your-info h1 {
+    font-weight: 600;
+    text-align: center;
+}
+
+.coutry {
+    margin-top: 18px;
+    margin-left: 5px;
+}
+
+.cntryWithName {
+    display: flex;
+}
+
+.your-info p {
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.margin {
+    margin-top: -200px;
+}
+
+.weatherIMG {
+    margin-top: 10px;
+
+}
+
+.your-info h2 {
+    font-size: 50px;
+}
+
+.mainData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.cards {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.card1 {
+    width: 200px;
+    height: 135px;
+    border-radius: 5px;
+    background-color: #DBE2ED80;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card2 {
+    width: 200px;
+    height: 135px;
+    border-radius: 5px;
+    background-color: #DBE2ED80;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card3 {
+    width: 200px;
+    height: 135px;
+    border-radius: 5px;
+    background-color: #DBE2ED80;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card1 h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.wind {
+    font-size: 18px;
+}
+
+.windData {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.card2 h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+.humidity {
+    font-size: 18px;
+}
+
+.humidityData {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.card3 h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+.cloud {
+    font-size: 18px;
+}
+
+.cloudData {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.get-info-by-search {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: -210px;
+    max-width: 550px;
+    visibility: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.get-info-by-search input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 0.7rem;
+    background: #DBE2ED80;
+    outline: none;
+}
+
+.get-info-by-search input::placeholder {
+    color: white;
+    font-size: 16px;
+}
+
+.btn {
+    background: #3f72af;
+    border: none;
+    outline: none;
+    width: 45px;
+    margin-left: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    visibility: hidden;
+}
+
+.active {
+    visibility: visible;
+}

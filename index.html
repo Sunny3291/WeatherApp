@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        
+        <!--Top Section-->
+        <div class="topSection">
+            <h1>WEATHER APP</h1>
+            <div class="tabs">
+                <p class="urWeather">Your Weather</p>
+                <p class="searchWeather">Search Weather</p>
+            </div>
+            
+        </div>
+
+        <!--Get User Current Location-->
+        <div class="accessLocation">
+            <img class="locationImg" src="location.png" alt="" width="80" height="80" loading="lazy">
+            <h1 >Grant Location Access</h1>
+            <p>Allow Access To Get Weather Information</p>
+            <button class="grantbtn">GRANT ACCESS</button>
+        </div>
+
+        <!--Search Location-->
+        <div class="get-info-by-search">
+            <input type="text" name="" id="search" placeholder="Search Your City...">
+            <button class="btn">
+                <img src="search.png" alt="" width="20" height="20" >
+            </button>
+        </div>
+
+        <!--loading-->
+        <div class="loading">
+            <img src="loading.gif" alt="" width="130" height="130">
+            <p>Loading</p>
+        </div>
+
+        <!--Your Location Section-->
+        <div class="your-info">
+            <div class="mainData">
+                <div class="cntryWithName">
+                    <h1 data-city ></h1>
+                    <img class="coutry"  src="" alt="" width="30" height="20">
+                </div>
+                
+                <p data-description></p>
+                <img class="weatherIMG" data-tempLogo src="" alt="" width="90" height="80">
+                <h2 data-temp ></h2>
+            </div>
+            
+
+            <!--cards-->
+            <div class="cards">
+                <div class="card1">
+                    <img src="wind.png" alt="" width="50" height="50">
+                    <h1 class="wind" >WINDSPEED</h1>
+                    <h1 class="windData" data-windspeed ></h1>
+                </div >
+
+                <div class="card2">
+                    <img src="humidity.png" alt="" width="50" height="50" >
+                    <h1 class="humidity">HUMIDITY</h1>
+                    <h1 class="humidityData" data-humidity ></h1>
+                </div >
+
+                <div class="card3">
+                    <img src="cloud.png" alt="" width="50" height="50" >
+                    <h1 class="cloud">CLOUD</h1>
+                    <h1 class="cloudData" data-cloud ></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
